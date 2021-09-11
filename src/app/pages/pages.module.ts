@@ -10,6 +10,7 @@ import { WhyComponent } from './why/why.component';
 import { HowComponent } from './how/how.component';
 import { WhatComponent } from './what/what.component';
 import { HeaderHomeComponent } from './header-home/header-home.component';
+import { RocketSvgComponent } from './rocket-svg/rocket-svg.component';
 
 @NgModule({
   imports: [CommonModule, PagesRoutingModule, NgMaterialModule],
@@ -20,7 +21,8 @@ import { HeaderHomeComponent } from './header-home/header-home.component';
     WhyComponent,
     HowComponent,
     WhatComponent,
-    HeaderHomeComponent
+    HeaderHomeComponent,
+    RocketSvgComponent
   ],
   exports: [ProductsComponent, HomeComponent, TeamComponent, ProductsComponent]
 })
