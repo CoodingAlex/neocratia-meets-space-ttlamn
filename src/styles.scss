@@ -24,6 +24,9 @@ body {
 
 .header-background {
   overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   //background-color: rgba(143, 35, 170, 0.8);
   background-color: $dark-background;
   height: 750px;
@@ -32,6 +35,7 @@ body {
   text-align: center;
   padding-top: $margin-promotion-sections;
   color: $light-text;
+  margin-left: 50px;
 }
 
 .rocket-svg {
