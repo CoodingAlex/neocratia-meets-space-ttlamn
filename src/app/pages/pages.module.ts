@@ -11,6 +11,7 @@ import { HowComponent } from './how/how.component';
 import { WhatComponent } from './what/what.component';
 import { HeaderHomeComponent } from './header-home/header-home.component';
 import { RocketSvgComponent } from './rocket-svg/rocket-svg.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   imports: [CommonModule, PagesRoutingModule, NgMaterialModule],
@@ -22,7 +23,8 @@ import { RocketSvgComponent } from './rocket-svg/rocket-svg.component';
     HowComponent,
     WhatComponent,
     HeaderHomeComponent,
-    RocketSvgComponent
+    RocketSvgComponent,
+    CardComponent
   ],
   exports: [ProductsComponent, HomeComponent, TeamComponent, ProductsComponent]
 })
