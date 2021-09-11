@@ -4,6 +4,7 @@
 $margin-promotion-sections: 60px;
 $margin-promotion-sections-small: 15px;
 $dark-background: #181818;
+$light-text: #ffffff;
 
 html,
 body {
@@ -23,13 +24,32 @@ body {
 
 .header-background {
   overflow: hidden;
-  background-color: rgba(143, 35, 170, 0.8);
-  height: 350px;
+  //background-color: rgba(143, 35, 170, 0.8);
+  background-color: $dark-background;
+  height: 750px;
 }
 .header-section {
   text-align: center;
   padding-top: $margin-promotion-sections;
+  color: $light-text;
 }
+
+.header-svg-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.rocket-svg {
+  svg {
+    height: 400px;
+  }
+}
+.svg-text {
+  display: block;
+  justify-self: flex-start;
+  align-self: center;
+  padding-right: 40px;
+}
+
 .header-headline {
   text-align: center;
   margin-top: 50px;
@@ -45,6 +65,10 @@ body {
     font-weight: 300;
     line-height: 28px;
     margin: 15px 0 25px 0;
+  }
+
+  .svg-text {
+    font-size: 30px;
   }
 }
 
