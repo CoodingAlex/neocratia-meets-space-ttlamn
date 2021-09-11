@@ -7,10 +7,21 @@ import { ProductsComponent } from './products/products.component';
 import { NgMaterialModule } from '../core/ng-material.module';
 
 import { WhyComponent } from './why/why.component';
+import { HowComponent } from './how/how.component';
+import { WhatComponent } from './what/what.component';
+import { HeaderHomeComponent } from './header-home/header-home.component';
 
 @NgModule({
   imports: [CommonModule, PagesRoutingModule, NgMaterialModule],
-  declarations: [HomeComponent, TeamComponent, ProductsComponent, WhyComponent],
+  declarations: [
+    HomeComponent,
+    TeamComponent,
+    ProductsComponent,
+    WhyComponent,
+    HowComponent,
+    WhatComponent,
+    HeaderHomeComponent
+  ],
   exports: [ProductsComponent, HomeComponent, TeamComponent, ProductsComponent]
 })
 export class PagesModule {}
