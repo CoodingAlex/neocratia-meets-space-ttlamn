@@ -27,6 +27,7 @@ body {
   //background-color: rgba(143, 35, 170, 0.8);
   background-color: $dark-background;
   height: 750px;
+  position: relative;
 }
 .header-section {
   text-align: center;
@@ -34,13 +35,12 @@ body {
   color: $light-text;
 }
 
-.header-svg-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
 .rocket-svg {
   svg {
-    height: 400px;
+    height: 600px;
+    top: 20%;
+    right: 0;
+    position: absolute;
   }
 }
 .svg-text {
