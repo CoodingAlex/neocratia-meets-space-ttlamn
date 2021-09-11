@@ -78,7 +78,9 @@ body {
 }
 
 .row-background-pair {
-  background-color: rgba(143, 35, 170, 0.2);
+  //background-color: rgba(143, 35, 170, 0.2);
+  color: $light-text;
+  background-color: $dark-background;
 }
 
 .home-card-display {
@@ -87,6 +89,7 @@ body {
 .home-card {
   display: flex;
   flex-direction: column;
+  margin: 0 5px;
   min-height: 250px;
   width: 300px;
   min-width: 250px;
@@ -94,7 +97,7 @@ body {
   color: white;
   border-radius: 16px;
   background: #17141d;
-  box-shadow: -1rem 0 3rem #000;
+  box-shadow: 1rem 0 3rem #000;
 
   transition: 0.2s;
 }
@@ -113,10 +116,6 @@ body {
 
 .home-card:hover ~ .home-card {
   transform: translateX(130px);
-}
-
-.home-card:not(:first-child) {
-  margin-left: -80px;
 }
 
 .info-card {
