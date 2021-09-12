@@ -3,7 +3,7 @@
   <mat-drawer #sideMenu mode="over">
     <app-side-menu (itemPressed)="sideMenu.toggle()"></app-side-menu>
   </mat-drawer>
-  <mat-drawer-content>
+  <mat-drawer-content class="smooth_scroll">
     <router-outlet></router-outlet>
     <app-footer></app-footer>
   </mat-drawer-content>

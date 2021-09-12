@@ -9,15 +9,20 @@ import { CardInformation } from '../card-information.model';
 export class WhatComponent implements OnInit {
   constructor() {}
 
+
   information: CardInformation[] = [
     {
       title: 'Citizen oversight',
       content:
-        'Products that helps people to check what their goverments are doing and how, what or why they are taking the decitions they make.,'
+        'Products that helps people to check what their goverments are doing and how, what or why they are taking the decitions they make.,',
+      grid: 'top-left'
+
     },
     {
       title: 'Liquid democracy',
-      content: `Democracy should be liquid, not all the votes on a goverment should be the same. Citizeens should be able to decide who has more their votes. Also, politicians must make public their opinion about every law and project they will vote, citizens should be invoolved on the debat so to who give their vote.`
+      content: `Democracy should be liquid, not all the votes on a goverment should be the same. Citizeens should be able to decide who has more their votes. Also, politicians must make public their opinion about every law and project they will vote, citizens should be invoolved on the debat so to who give their vote.`,
+      grid: 'mid-right'
+
     },
     {
       title: 'Transparent money',
@@ -25,7 +30,9 @@ export class WhatComponent implements OnInit {
         rich people, they need to be free to take the best decisions for the people. Also, the
         money the goverment spends comes from oour taxes, is our mooney, so we need to see where
         it goes, why it goes there and what iis the projections. We are theiir investments, they
-        need to show us the money.`
+        need to show us the money.`,
+      grid: 'bot-left'
+
     }
   ];
   ngOnInit(): void {}
