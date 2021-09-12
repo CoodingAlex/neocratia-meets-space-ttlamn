@@ -238,10 +238,39 @@ body {
     height: auto;
     margin-top: 12px;
   }
+
+  .header-section {
+    padding: 0;
+  }
+
+  .header-headline {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+  }
   .header-background {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     height: 100vh;
+  }
+  .header-headline {
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+    .svg-text {
+      font-size: 25px;
+      justify-self: unset;
+      margin-left: 40px;
+    }
+  }
+  .header-start {
+    margin-right: 40px;
   }
 }
