@@ -1,5 +1,10 @@
+.team-wrapper {
+  margin-top: 100px;
+}
+
 .box {
-  display: flex;
-  flex-wrap: wrap;
-  place-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  margin: 60px auto;
 }
