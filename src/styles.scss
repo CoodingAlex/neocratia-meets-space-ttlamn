@@ -119,7 +119,9 @@ body {
 .docs-homepage-promo {
   align-items: center;
   display: grid;
+  overflow-y: scroll;
 
+  scroll-behavior: smooth;
   grid-template-columns: 1fr 2fr;
   flex-direction: column;
   padding: 16px;
@@ -211,6 +213,10 @@ body {
     display: flex;
   }
 
+  .docs-homepage-promo {
+    display: flex;
+    justify-content: center;
+  }
   .home-card {
     margin: 5px 5px;
   }

@@ -25,6 +25,9 @@
   }
 }
 
-.home-card:hover ~ .home-card {
-  transform: translateX(130px);
+@media (max-width: 1120px) {
+  .home-card {
+    min-width: 250px;
+    margin: 10px 10px;
+  }
 }
