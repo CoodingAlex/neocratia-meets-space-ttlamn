@@ -4,11 +4,11 @@
     <p>Joining together activists and tech makers 🤟</p>
   </div>
   <div class="docs-homepage-row">
-    <div *ngFor="let info of information" class="docs-homepage-promo-desc">
-      <app-home-card class="home-card" [title]="info.title" [content]="info.content"></app-home-card>
-    </div>
+    <app-home-card *ngFor="let info of information" [class]="'grid-' + info.grid" [title]="info.title"
+      [content]="info.content">
+    </app-home-card>
   </div>
-  <div style="margin-top:14px;">
+  <div style="margin-top:14px;" class="grid-section-center">
     <a mat-raised-button color="accent" class="button" routerLink="team">Meet the team!</a>
   </div>
 </div>

@@ -4,12 +4,11 @@
     <p>Digital products that gives the power to the people 💚</p>
   </div>
   <div class="docs-homepage-row">
-    <div *ngFor="let info of information" class="docs-homepage-promo-desc">
-      <app-home-card class="home-card" [title]="info.title" [content]="info.content"></app-home-card>
-    </div>
-
+    <app-home-card *ngFor="let info of information" [class]="'grid-' + info.grid" [title]="info.title"
+      [content]="info.content">
+    </app-home-card>
   </div>
-  <div class="mt-12 align-center">
+  <div class="mt-12 align-center grid-section-center">
     <span class="grid-item" ngClass="mat-body-2">Check our beta products</span>
     <div class="grid mt-12">
       <div class="grid-item mr-12">

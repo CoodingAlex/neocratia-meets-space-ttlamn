@@ -1,13 +1,11 @@
 <div id="why" class="docs-homepage-promo row-background-even">
-  <div class="home-card-display">
-  </div>
   <div class="header-headline">
     <h1 class="mat-h1">Why we do it?</h1>
     <p>To fix the system 💪</p>
   </div>
   <div class="docs-homepage-row">
-    <div *ngFor="let info of information" class="docs-homepage-promo-desc">
-      <app-home-card class="home-card" [title]="info.title" [content]="info.content"></app-home-card>
-    </div>
+    <app-home-card *ngFor="let info of information" [class]="'grid-' + info.grid" [title]="info.title"
+      [content]="info.content">
+    </app-home-card>
   </div>
 </div>

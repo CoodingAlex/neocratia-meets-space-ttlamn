@@ -12,20 +12,24 @@ export class HowComponent implements OnInit {
   information: CardInformation[] = [
     {
       title: 'Group of political and tech activists all arround the world',
+
       content: `With the current system the citizens are working hard to fund the system, that funds
         banks and big corporations. Big companies wants money, politicians want power, they are
-        the perfect match to oprress citizens.`
+        the perfect match to oprress citizens.`,
+      grid: 'top-left'
     },
     {
       title: 'Thinking global, ambitious, and non-for-profit.',
       content: `To make this big, we need full-time people, so we will fund our selves with a
-      subscription moodel you can subscribe on <strong>Vaki Sponsots</strong>`
+      subscription moodel you can subscribe on <strong>Vaki Sponsots</strong>`,
+      grid: 'mid-right'
     },
     {
       title: 'Transparency on public money',
       content: `With the current system the citizens are working hard to fund the system, that funds
       banks and big corporations. Big companies wants money, politicians want power, they are
-      the perfect match to oprress citizens.`
+      the perfect match to oprress citizens.`,
+      grid: 'bot-left'
     }
   ];
 
