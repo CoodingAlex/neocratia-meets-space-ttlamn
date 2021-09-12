@@ -4,46 +4,8 @@
     <p>Joining together activists and tech makers 🤟</p>
   </div>
   <div class="docs-homepage-row">
-    <div class="docs-homepage-promo-desc">
-      <mat-card class="info-card">
-        <mat-card-header>
-          <mat-card-title>Group of political and tech activists all arround the world</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            With the current system the citizens are working hard to fund the system, that funds
-            banks and big corporations. Big companies wants money, politicians want power, they are
-            the perfect match to oprress citizens.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-    <div class="docs-homepage-promo-desc">
-      <mat-card class="info-card">
-        <mat-card-header>
-          <mat-card-title>Thinking global, ambitious, and non-for-profit.</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            To make this big, we need full-time people, so we will fund our selves with a
-            subscription moodel you can subscribe on <strong>Vaki Sponsots</strong>
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-    <div class="docs-homepage-promo-desc">
-      <mat-card class="info-card">
-        <mat-card-header>
-          <mat-card-title>Transparency on public money</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            With the current system the citizens are working hard to fund the system, that funds
-            banks and big corporations. Big companies wants money, politicians want power, they are
-            the perfect match to oprress citizens.
-          </p>
-        </mat-card-content>
-      </mat-card>
+    <div *ngFor="let info of information" class="docs-homepage-promo-desc">
+      <app-home-card class="home-card" [title]="info.title" [content]="info.content"></app-home-card>
     </div>
   </div>
   <div style="margin-top:14px;">
