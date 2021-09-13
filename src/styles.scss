@@ -43,7 +43,7 @@ body {
   align-items: center;
   //background-color: rgba(143, 35, 170, 0.8);
   background-color: $dark-background;
-  height: 750px;
+  min-height: 100vh;
 }
 .header-section {
   text-align: center;
@@ -68,6 +68,7 @@ body {
 .header-headline {
   text-align: center;
   margin-top: 50px;
+
   h1 {
     font-size: 56px;
     font-weight: 300;
@@ -188,7 +189,7 @@ body {
   text-align: center;
 }
 .card-content {
-  height: 250px;
+  //height: 250px;
   overflow: hidden;
 }
 .card-content-max {
@@ -199,6 +200,34 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (min-width: 1120px) {
+  .section-header-headline {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    h1 {
+      margin: 0;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      height: 100%;
+      color: #fff;
+      background: #000;
+      text-align: center;
+      display: grid;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    p {
+      align-self: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
 }
 /**
   * Rules for when the device is detected to be a small screen.
