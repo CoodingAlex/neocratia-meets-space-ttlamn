@@ -52,6 +52,20 @@ body {
   margin-left: 50px;
 }
 
+.svg-backgroung {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  opacity: 0.5;
+
+  svg {
+    transform: scale(70%);
+  }
+}
 .rocket-svg {
   svg {
     height: 400px;
@@ -121,6 +135,7 @@ body {
   align-items: center;
   display: grid;
   overflow-y: scroll;
+  position: relative;
 
   scroll-behavior: smooth;
   grid-template-columns: 1fr 2fr;
@@ -289,5 +304,11 @@ body {
   }
   .header-start {
     margin-right: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .svg-backgroung {
+    display: none;
   }
 }
