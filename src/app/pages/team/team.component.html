@@ -1,11 +1,16 @@
 <div id="why" class=" team-wrapper">
+  <div class="svg-backgroung">
+    <app-rocket-svg class="svg"></app-rocket-svg>
+
+  </div>
   <div class="header-headline">
     <h1 class="mat-h1">Meet the team</h1>
     <p>Who is fixing the system 💪</p>
   </div>
   <div class="box">
-    <div *ngFor="let member of teamMembers">
-      <app-team-card [bioUrl]="member.bioUrl" [photo]="member.photo" [name]="member.name"
+    <div *ngFor="let member of teamMembers; index as i" [class]="'row-' + (i + 1)"
+      [ngClass]="{'column-1': i % 2 === 0, 'column-2': i % 2 !== 0}">
+      <app-team-card [bioUrl]="member.bioUrl" [photo]="member.photo" [name]="member.name" [index]="i"
         [twitterUrl]="member.twitterUrl" [description]="member.description" [twitter]="member.twitter"></app-team-card>
     </div>
   </div>
