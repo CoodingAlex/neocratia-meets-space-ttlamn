@@ -52,7 +52,7 @@ body {
   margin-left: 50px;
 }
 
-.svg-backgroung {
+.svg-section-backgroung{
   position: absolute;
   top: 0;
   left: 20%;
@@ -308,7 +308,7 @@ body {
 }
 
 @media (max-width: 800px) {
-  .svg-backgroung {
+  .svg-section-backgroung {
     display: none;
   }
 }
