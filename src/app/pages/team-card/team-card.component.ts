@@ -25,4 +25,8 @@ export class TeamCardComponent implements OnInit {
     }
     console.log('hola');
   }
+
+  goTo(url: string) {
+    window.open(url);
+  }
 }
